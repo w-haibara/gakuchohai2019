@@ -1,0 +1,60 @@
+[
+{
+    "id": "ea6e580c.dc71a",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+},
+{
+    "id": "17f7962d.7aead2",
+    "type": "inject",
+    "z": "ea6e580c.dc71a",
+    "name": "",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 100,
+    "y": 300,
+    "wires": [
+        [
+            "22b9c50d.df1942",
+    "d327e261.a094c8"
+        ]
+    ]
+},
+{
+    "id": "22b9c50d.df1942",
+    "type": "udp out",
+    "z": "ea6e580c.dc71a",
+    "name": "",
+    "addr": "192.168.4.1",
+    "iface": "",
+    "port": "8888",
+    "ipv": "udp4",
+    "outport": "",
+    "base64": false,
+    "multicast": "false",
+    "x": 240,
+    "y": 400,
+    "wires": []
+},
+{
+    "id": "d327e261.a094c8",
+    "type": "debug",
+    "z": "ea6e580c.dc71a",
+    "name": "",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "x": 250,
+    "y": 220,
+    "wires": []
+}
+]
